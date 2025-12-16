@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forgot Password - Nexafyre</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <form id="forgotForm">
+        <h2>Forgot Password</h2>
+        <input type="email" placeholder="Enter your Email" required>
+        <button type="submit">Send Reset Link</button>
+        <p><a href="index.html">Back to Login</a></p>
+    </form>
+</div>
+<script>
+document.getElementById('forgotForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert("Reset link sent to your email!");
+    window.location.href = "reset.html";
+});
+</script>
+</body>
+</html>

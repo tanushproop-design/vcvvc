@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reset Password - Nexafyre</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <form id="resetForm">
+        <h2>Reset Password</h2>
+        <input type="password" placeholder="New Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <button type="submit">Reset</button>
+    </form>
+</div>
+<script>
+document.getElementById('resetForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert("Password reset successful!");
+    window.location.href = "index.html";
+});
+</script>
+</body>
+</html>
